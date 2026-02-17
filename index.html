@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/elements.css" />
+    <link rel="stylesheet" href="styles/conditions.css" />
+    <title>Weather-info</title>
   </head>
   <body>
-    <header id="header"><h1>Home work: weather-info</h1></header>
+    <header id="header"><h1>Weather-info</h1></header>
 
     <div id="inputInfo">
-    <select name="cityName" id="citySelector"></select>
-    <button id="getWeather">Get info</button>
+      <!-- Автокомплит в инпуте выключил потому что подсказки браузера бесили-перекрывали другие элементы -->
+      <input id="cityInput" type="text" placeholder="Input city name"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+      <button id="getWeather">Get info</button>
     </div>
+
+    <div id="suggestions"></div>
 
     <div id="weather"></div>
     <script src="main.js" type="module"></script>

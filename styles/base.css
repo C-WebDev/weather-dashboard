@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.8s ease;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+/* mobile-landscape/ tablets */
+@media (max-width: 900px) {
+  /* body {
+    padding: 10px;
+  } */
+}
+
+/* mobiles-portrait */
+@media (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+  }
+}

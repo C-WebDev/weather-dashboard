@@ -1,0 +1,4 @@
+/* пример: ясная погода */
+body.weather-clear {
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
